@@ -436,12 +436,7 @@
         249,
         239
       ],
-      "accounts": [
-        {
-          "name": "account",
-          "writable": true
-        }
-      ],
+      "accounts": [],
       "args": [
         {
           "name": "non_zero_u8",
@@ -450,8 +445,17 @@
         {
           "name": "non_zero_i64",
           "type": "i64"
+        },
+        {
+          "name": "fields",
+          "type": {
+            "defined": {
+              "name": "NonZeroFields"
+            }
+          }
         }
-      ]
+      ],
+      "returns": "u8"
     },
     {
       "name": "primitive_types",
@@ -888,19 +892,6 @@
         105,
         142,
         20
-      ]
-    },
-    {
-      "name": "NonZeroAccount",
-      "discriminator": [
-        201,
-        148,
-        1,
-        214,
-        127,
-        195,
-        167,
-        209
       ]
     },
     {
@@ -1421,7 +1412,7 @@
       }
     },
     {
-      "name": "NonZeroAccount",
+      "name": "NonZeroFields",
       "type": {
         "kind": "struct",
         "fields": [

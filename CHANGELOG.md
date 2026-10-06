@@ -20,6 +20,7 @@ The minor version will be incremented upon a breaking change and the patch versi
 - lang: Use `CreateAccountAllowPrefund` to initialize accounts that already hold lamports, replacing the `Transfer` + `Allocate` + `Assign` CPIs ([#5057](https://github.com/otter-sec/anchor/pull/5057)).
 - lang: Allow `None` in `mint::authority` and `mint::freeze_authority` constraints ([#5007](https://github.com/otter-sec/anchor/pull/5007)).
 - lang: Implement `Space` for `NonZero*` integers so `#[derive(InitSpace)]` supports them ([#5132](https://github.com/otter-sec/anchor/pull/5132)).
+- idl: Support `NonZero*` integer types in IDL generation ([#5130](https://github.com/otter-sec/anchor/pull/5130)).
 
 ### Fixes
 
@@ -36,7 +37,6 @@ The minor version will be incremented upon a breaking change and the patch versi
 - cli: Make `anchor keygen new --silent` withhold the seed phrase instead of only the pubkey, matching `solana-keygen new --silent`. ([#5080](https://github.com/otter-sec/anchor/pull/5080)).
 - deps: Bump `heck` to 0.5 to avoid incompatible dependencies ([#4960](https://github.com/otter-sec/anchor/pull/4960)).
 - idl: Fail with an error when a type alias name is defined differently in more than one module, instead of silently using the first definition ([#5131](https://github.com/otter-sec/anchor/pull/5131)).
-- idl: Support `NonZero*` integer types in IDL generation ([#5130](https://github.com/otter-sec/anchor/pull/5130)).
 
 ### Breaking
 
